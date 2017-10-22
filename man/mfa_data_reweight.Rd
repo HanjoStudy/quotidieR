@@ -49,4 +49,3 @@ mfa_data_reweight(dataset, mfa_res)
 mfa_data_reweight(dataset, mfa_res, dim = 12)
  
 }
-

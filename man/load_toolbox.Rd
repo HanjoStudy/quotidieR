@@ -19,4 +19,3 @@ dplyr, readr, lubridate, tidyr, openxlsx, ggplot, purrr
 \examples{
 load_toolbox()
 }
-

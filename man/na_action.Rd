@@ -47,4 +47,3 @@ na_action(x, drop = T, cutoff = 2)
 na_action(x, drop = T, cutoff = 0.6)
  
 }
-

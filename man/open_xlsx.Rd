@@ -50,4 +50,3 @@ open_xlsx(nameVec3, tableList2, "test", loadWorkBook = TRUE, replaceSheets = TRU
 
 file.remove("test.xlsx")
 }
-

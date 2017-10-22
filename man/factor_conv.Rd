@@ -22,4 +22,3 @@ Takes a data frame as input, checks class of each column and then converts chara
  df <- factor_conv(iris, rev = T)
  factor_conv(df)
 }
-

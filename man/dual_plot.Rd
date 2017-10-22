@@ -53,4 +53,3 @@ mtext(side = 1, "Data from RBNZ",
           adj = 1, cex = 0.8, line = 3)
           
 }
-

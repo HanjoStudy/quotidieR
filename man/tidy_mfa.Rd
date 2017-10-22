@@ -48,4 +48,3 @@ mfa_res <- MFA(poison, group=c(2,2,5,6), type=c("s","n","n","n"),
 
 tidy_mfa(mfa_res)
 }
-

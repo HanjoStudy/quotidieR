@@ -74,4 +74,3 @@ res<-MFA(mortality,group=c(9,9),type=c("f","f"),
 ## End(Not run)
 
 }
-

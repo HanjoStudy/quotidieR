@@ -46,4 +46,3 @@ best_fit \%>\% select(clusters, withinss, seed) \%>\% mutate(seed = factor(seed)
   scale_colour_manual(values=c(rep("#8599bc", seeds)))
 
 }
-

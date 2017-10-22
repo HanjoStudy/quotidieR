@@ -12,4 +12,3 @@ data(sales)
 A dataset contain various sales metrics explaining customer behaviour
 }
 \keyword{datasets}
-

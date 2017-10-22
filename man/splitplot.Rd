@@ -44,4 +44,3 @@ splitplot(mfa, dim = 5, type = "combined")
 splitplot(mfa, dim = c(1:2), type = "combined", grid = c(1,2), specific = T)
 
 }
-

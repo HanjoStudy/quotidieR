@@ -31,4 +31,3 @@ moveme(names(df), "g first")
 # df \%>\% select(match(moveme(names(df), "g first"), names(df)))
 
 }
-

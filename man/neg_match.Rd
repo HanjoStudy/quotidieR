@@ -15,4 +15,3 @@ negative match vector
 \description{
 Negative match function
 }
-

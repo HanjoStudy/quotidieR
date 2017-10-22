@@ -25,4 +25,3 @@ Trade-weighted Index for New Zealand
 \url{http://ellisp.github.io/blog/2016/08/18/dualaxes}
 }
 \keyword{datasets}
-

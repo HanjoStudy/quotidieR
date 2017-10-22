@@ -18,4 +18,3 @@ load_pkg Loads a list of packages. If a package requires installation, the funct
 \examples{
 load_pkg(c("ggplot2", "dplyr"))
 }
-

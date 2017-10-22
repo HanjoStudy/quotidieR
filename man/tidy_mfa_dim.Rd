@@ -40,4 +40,3 @@ Takes an MFA objects and tidy the data into a much easier working format for eva
  tidy_mfa_dim(res)
 
 }
-

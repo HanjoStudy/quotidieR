@@ -26,4 +26,3 @@ plot_na(data)
 
 
 }
-

@@ -27,4 +27,3 @@ library(FactoMineR)
  
  mfa_eval_plots(res, indi = T)
 }
-
