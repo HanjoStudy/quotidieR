@@ -9,7 +9,7 @@
 #' @export
 
 
-get_method <- function(obj, sleep = 1){
+show_method <- function(obj, sleep = 1){
   message("Object is off class: ", class(obj))
   Sys.sleep(sleep)
   showMethods(class=class(obj), where=search())
