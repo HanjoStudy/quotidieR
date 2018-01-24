@@ -92,5 +92,9 @@ tidy_mfa <- function(mfa_res, type = c("all", "quanti", "quali", "category")[1])
       map(as_data_frame)
   }
   
+  names(mfa_types) <- mfa_types %>%
+    map(~.x %>% select(type) %>% distinct %>% unlist %>% as.character) %>% 
+    reduce(c)
+  
   return(mfa_types)
 }

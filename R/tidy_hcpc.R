@@ -20,7 +20,7 @@
 
 tidy_hcpc <- function(hcpc_res){
   
-  load_pkg(c("purrr"))
+  load_pkg(c("purrr", "dplyr"))
   
   hcpc_names <- names(hcpc_res$desc.var)
   
