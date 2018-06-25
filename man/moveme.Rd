@@ -4,12 +4,12 @@
 \alias{moveme}
 \title{Move column position}
 \usage{
-moveme(invec, movecommand)
+moveme(df, movecommand)
 }
 \arguments{
-\item{invec}{names of dataframe that you will be organising}
-
 \item{movecommand}{command that depicts how columns are moved: before, after, first, last}
+
+\item{invec}{names of dataframe that you will be organising}
 }
 \value{
 vector of column names
@@ -23,11 +23,8 @@ a <- b <- c <- d <- e <- f <- g <- 1:100
 df <- data.frame(a,b,c,d,e,f,g)
 df <- df \%>\% tbl_df
 
-moveme(names(df), "g first; a last; e before c")
-moveme(names(df), "g first")
-
 # Usage
-# df[,moveme(names(df), "g first")]
-# df \%>\% select(match(moveme(names(df), "g first"), names(df)))
+df \%>\% moveme(., "g first")
+df \%>\% moveme(., "g first; a last; e before c")
 
 }

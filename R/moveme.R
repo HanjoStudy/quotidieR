@@ -8,18 +8,16 @@
 #' df <- data.frame(a,b,c,d,e,f,g)
 #' df <- df %>% tbl_df
 #' 
-#' moveme(names(df), "g first; a last; e before c")
-#' moveme(names(df), "g first")
-#' 
 #' # Usage
-#' # df[,moveme(names(df), "g first")]
-#' # df %>% select(match(moveme(names(df), "g first"), names(df)))
+#' df %>% moveme(., "g first")
+#' df %>% moveme(., "g first; a last; e before c")
 #' 
 #' @return vector of column names
 #' @export
 
-
-moveme <- function (invec, movecommand) {
+moveme <- function (df, movecommand) {
+  library(dplyr)
+  invec <- names(df)
   
   movecommand <- lapply(strsplit(strsplit(movecommand, ";")[[1]], 
                                  ",|\\s+"), function(x) x[x != ""])
@@ -50,5 +48,6 @@ moveme <- function (invec, movecommand) {
     }
     myVec <- append(temp, values = movelist[[i]][[1]], after = after)
   }
-  myVec
+  
+  df %>% select(match(myVec, names(.)))
 }

@@ -4,7 +4,7 @@
 \alias{theme_Publication}
 \title{Theme to be used in journal publications}
 \usage{
-theme_Publication(base_size = 14, base_family = "helvetica")
+theme_Publication(base_size = 14)
 }
 \arguments{
 \item{base_size}{size of text in the graph}

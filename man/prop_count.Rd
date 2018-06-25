@@ -15,5 +15,5 @@ prop_count(df, ...)
 Gives a proportional count of variables supplied
 }
 \examples{
-iris \%>\% prop_count(Species, Petal.Width)
+dplyr::starwars \%>\% prop_count(homeworld, species)
 }
